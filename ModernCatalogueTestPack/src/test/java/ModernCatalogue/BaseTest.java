@@ -21,7 +21,7 @@ public class BaseTest extends BaseClass{
 
     @After
     public void stopBrowser() {
-        //  driver.quit();
+          driver.quit();
           }
 
 }
