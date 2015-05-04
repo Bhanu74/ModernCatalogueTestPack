@@ -7,7 +7,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.Select;
 
 /**
- * Created by User on 01/05/2015.
+ * Created by arunabhamidipati on 01/05/2015.
  */
 public class Utils extends BaseClass {
     public static boolean acceptNextAlert = true;
