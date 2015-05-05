@@ -23,7 +23,7 @@ public class BusinessLibrary extends BaseClass {
     }
 
     //Method to verify Sort functionality
-    public void sortOrder(String order) {
+    public boolean sortOrder(String order) {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         //verifying sort order by LowToHigh
         if (order.equalsIgnoreCase("LowToHigh")) {
@@ -45,8 +45,10 @@ public class BusinessLibrary extends BaseClass {
                     firstProdutPrice = nextProductPrice;
                 }else {
                     System.out.println("Incorrect Sorting order");
+                    return false;
                 }
             }
+            return true;
        }
         //verifying sort order by HighToLow
         else if (order.equalsIgnoreCase("HighToLow")){
@@ -68,11 +70,14 @@ public class BusinessLibrary extends BaseClass {
 
                 }else {
                     System.out.println("Incorrect Sorting order");
+                    return false;
                 }
             }
+            return true;
 
         } else{
                  System.out.println("Invalid Sort order");
+                 return false;
               }
     }
 

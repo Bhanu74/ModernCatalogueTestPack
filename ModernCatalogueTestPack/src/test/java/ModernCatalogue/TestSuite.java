@@ -51,13 +51,14 @@ public class TestSuite extends BaseTest{
     public void sortByLowToHigh() {
         blib.goToSofasProductcatalougue();
        // System.out.println("Check 1");
-        blib.sortOrder("LowToHigh");
+       // blib.sortOrder("LowToHigh");
+        Assert.assertTrue(blib.sortOrder("LowToHigh"));
       //  System.out.println("Check 2");
          }
     @Test
     public void sortByHighToLow() {
         blib.goToSofasProductcatalougue();
-        blib.sortOrder("HighToLow");
+        Assert.assertTrue(blib.sortOrder("HighToLow"));
     }
 
  //verifying the  Price Calculation in Shopping Basket
